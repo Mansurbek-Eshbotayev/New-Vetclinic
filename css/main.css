@@ -1,0 +1,1623 @@
+/* Fonts */
+
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url('../fonts/FuturaPT-Bold.woff2') format('woff2'),
+  url('../fonts/FuturaPT-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Futura PT';
+  src: url('../fonts/FuturaPT-Bold.woff2') format('woff2'),
+  url('../fonts/FuturaPT-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Futura PT';
+  src: url('../fonts/FuturaPT-Medium.woff2') format('woff2'),
+  url('../fonts/FuturaPT-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url('../fonts/FuturaPT-Medium.woff2') format('woff2'),
+  url('../fonts/FuturaPT-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Futura PT Book';
+  src: url('../fonts/FuturaPT-Book.woff2') format('woff2'),
+  url('../fonts/FuturaPT-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Futura PT Book';
+  src: url('../fonts/FuturaPT-Book.woff2') format('woff2'),
+  url('../fonts/FuturaPT-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* VARIABLES */
+
+:root{
+  --main-text-color : #333333;
+  --main-bg-color : #333333;
+  --ellow-hover-color : #FFBD54;
+  --ellow-bg-color : #FFBD54;
+  --white-bg-color : #ffff;
+  --main-font-size : 18px;
+  --main-font-weight : 400;
+}
+
+/* GENERAL */
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+
+html{
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+img{
+  display: block;
+  height: auto;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Futura PT",  'Arial', 'sans-serif';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: var(--main-line-height);
+  background-image: url(../images/bg.png);
+  background-position: calc(50% + 3px) calc(50% + 160px);
+  background-repeat: repeat;
+  background-color: #F9F8F8;
+  overflow-x: hidden;
+}
+
+.container{
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1 , h2 , h3 , p {
+  margin: 0;
+}
+
+/* VISUALLY-HIDDEN */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* CONTAINER */
+
+.container{
+  /* max-width: YOUR CONTAINER MAX-WIDTH PX HERE; */
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* STICKY-FOOTER */
+
+.site-main{
+  flex-grow: 1;
+}
+
+
+/* SITE HEADER */
+
+.site-header__top{
+  padding: 12px 0px 9px 0px;
+}
+
+.top__list{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.top__item{
+  margin-right: 120px;
+}
+
+.top__item:nth-child(3){
+  position: relative;
+}
+
+.top__item:nth-child(3)::before{
+  content: "";
+  width: 14px;
+  height: 14px;
+  top: 4px;
+  left: -21px;
+  background-image: url(../images/icons/calendar.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+
+
+.top__item:last-child{
+  margin-right: 0;
+}
+
+.top__time{
+  margin-right: 17px;
+}
+
+.top__time:last-child{
+  margin-right: 0;
+}
+
+.address__link{
+  text-decoration: none;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: var(--main-text-color);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.address__link::before{
+  content: "";
+  width: 14px;
+  height: 14px;
+  top: 2px;
+  left: -21px;
+  background-image: url(../images/icons/house.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.address__link:hover{
+  color:var(--ellow-hover-color);
+}
+
+.address__link:active{
+  color: var(--main-text-color);
+  opacity: 0.6;
+}
+
+.phone__list{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.phone__list::before{
+  content: "";
+  width: 14px;
+  height: 14px;
+  top: 4px;
+  left: -21px;
+  background-image: url(../images/icons/phone.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.phone__item{
+  margin-right: 22px;
+}
+
+.phone__item:nth-child(2){
+  position: relative;
+}
+
+.phone__item:nth-child(2)::before{
+  content: "";
+  width: 4px;
+  height: 4px;
+  top: 8px;
+  left: -12px;
+  background-image: url(../images/icons/house.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.phone__item:nth-child(2)::after{
+  content: "";
+  width: 4px;
+  height: 4px;
+  top: 8px;
+  right: -12px;
+  background-image: url(../images/icons/house.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.phone__item:last-child{
+  margin-right: 0;
+}
+
+.phone__link{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--main-text-color);
+  transition: all 0.3s ease;
+}
+
+.phone__link:hover{
+  color:var(--ellow-hover-color);
+}
+
+.phone__link:active{
+  color: var(--main-text-color);
+  opacity: 0.6;
+}
+
+/* site-header__bottom */
+
+.site-header__bottom{
+  padding: 20px 0px;
+  background-color:var(--white-bg-color) ;
+}
+
+.down__inner{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.down__img{
+  position: absolute;
+  top: -37px;
+  left: 0px;
+  transition: all 0.2s ease;
+}
+
+.down__img:hover{
+  opacity: 0.8;
+}
+
+.down__img:active{
+  opacity: 0.6;
+}
+
+.down__nav{
+  margin-right: 195px;
+}
+
+.menu__list{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.menu__item{
+  margin-right: 55px;
+}
+
+.menu__item::before{
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 3px;
+  left: -26px;
+  background-image: url(../images/icons/fish.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.menu__item:last-child{
+  margin-right: 0;
+}
+
+.menu__link{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  border-bottom: 3px solid transparent;
+  color: var(--main-text-color);
+  transition: all 0.3s ease;
+}
+
+.menu__link:hover{
+  border-color: #F4FFAD;
+}
+
+.menu__link:active{
+  opacity: 0.6;
+}
+
+.down__link{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: right;
+  color:var(--main-text-color);
+  position: relative;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.down__link:hover{
+  border-color: #F4FFAD;
+}
+
+.down__link:active{
+  opacity: 0.6;
+}
+
+.down__link::before{
+  content: "";
+  width: 23px;
+  height: 21px;
+  top: 0px;
+  left: -28px;
+  background-image: url(../images/icons/pet.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  
+}
+
+
+/* SITE HERO */
+
+.hero{
+  padding: 153px 0 311px 0;
+  background-image: url(../images/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: calc(50% - 537px) calc(50% - 80px);
+  overflow: hidden;
+}
+
+.hero__info{
+  width: 608px;
+  margin-left: auto;
+  position: relative;
+}
+
+.hero__info::after{
+  content: "";
+  width: 319px;
+  height: 430px;
+  top: 249px;
+  right: -190px;
+  background-image: url(../images/bord-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.hero__title{
+  margin-bottom: 29px;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 64px;
+  color: var(--main-text-color);
+}
+
+.title__color{
+  color:#78c0de ; 
+}
+
+.hero__wrap{
+  width: 495px;
+}
+
+.hero__text{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #949494;
+  margin-bottom: 38px;
+}
+
+.hero__link{
+  display: inline-block;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--white-bg-color);
+  padding: 15px 48px;
+  background-color: #333333;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.hero__link:hover{
+  color: var(--main-text-color);
+  background-color: var(--ellow-bg-color);
+}
+
+.hero__link:active{
+  opacity: 0.6;
+}
+
+
+/* SITE BLOCKQUOTA */
+
+.blockquote{
+  padding-bottom: 190px;
+}
+
+.blockquote__info{
+  width: 753px;
+  margin: 0 auto;
+  padding: 43px 0px 35px 0px;
+  margin-bottom: 35px;
+  position: relative;
+  
+}
+
+.blockquote__info::before{
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: 17px;
+  left: -80px;
+  background-image: url(../images/icons/blog-one.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.blockquote__info::after{
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: 80px;
+  right: -80px;
+  background-image: url(../images/icons/blog-two.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.blockquote__text{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #949494;
+  margin: 0;
+  position: relative;
+}
+
+.blockquote__text::before{
+  content: "";
+  width: 140px;
+  height: 1px;
+  top: -40px;
+  left: 280px;
+  background-image: url(../images/icons/blog-line.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.blockquote__text::after{
+  content: "";
+  width: 140px;
+  height: 1px;
+  bottom: -40px;
+  left: 280px;
+  background-image: url(../images/icons/blog-line.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.blockquote__title{
+  text-align: center;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #333333;
+}
+
+/* SITE SERVICES */
+
+.services{
+  padding-bottom: 235px;
+}
+
+.services__title{
+  text-align: center;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 54px;
+  margin-bottom: 80px;
+  color: var(--main-text-color);
+}
+
+.services__top{
+  width: 1225px;
+  margin: 0 auto;
+}
+
+.our-services__list{
+  display: flex;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+
+.our-services__item{
+  width: 193px;
+  min-width: 193px;
+  height: 201px;
+  padding: 30px 33px 28px 34px;
+  background-color: var(--white-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  margin-right: 13px;
+  margin-bottom: 14px;
+  border: 1px solid #F3F3F3;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.our-services__item:hover{
+  opacity: 0.8;
+}
+
+.our-services__item:active{
+  opacity: 0.6;
+}
+
+.our-services__item--one{
+  position: relative;
+  margin-bottom: 0;
+  border: none;
+  padding-top: 178px;
+  padding-bottom: 39px;
+}
+
+.our-services__item--one::before{
+  content: "";
+  display: inline-block;
+  top: 32px;
+  left: 75px;
+  width: 54px;
+  height: 78px;
+  background-image: url(../images/servis-one.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.our-services__item--two{
+  position: relative;
+}
+
+.our-services__item--two::before{
+  content: "";
+  display: inline-block;
+  top: 32px;
+  left: 48px;
+  width: 62px;
+  height: 77px;
+  background-image: url(../images/servis-two.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.our-services__item--thri{
+  position: relative;
+}
+
+.our-services__item--thri::before{
+  content: "";
+  display: inline-block;
+  top: 32px;
+  left: 60px;
+  width: 72px;
+  height: 77px;
+  background-image: url(../images/servis-thri.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.our-services__item--four{
+  position: relative;
+}
+
+.our-services__item--four::before{
+  content: "";
+  display: inline-block;
+  top: 40px;
+  left: 53px;
+  width: 75px;
+  height: 75px;
+  background-image: url(../images/servis-four.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.our-services__item--five{
+  position: relative;
+}
+
+.our-services__item--five::before{
+  content: "";
+  display: inline-block;
+  top: 33px;
+  left: 60px;
+  width: 78px;
+  height: 78px;
+  background-image: url(../images/servis-five.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.our-services__item--six{
+  position: relative;
+}
+
+.our-services__item--six::before{
+  content: "";
+  display: inline-block;
+  top: 38px;
+  left: 60px;
+  width: 76px;
+  height: 76px;
+  background-image: url(../images/servis-six.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.our-services__item--seven{
+  position: relative;
+}
+
+.our-services__item--seven::before{
+  content: "";
+  display: inline-block;
+  top: 33px;
+  left: 47px;
+  width: 77px;
+  height: 77px;
+  background-image: url(../images/servis-seven.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.our-services__item--eith{
+  position: relative;
+}
+
+.our-services__item--eith::before{
+  content: "";
+  display: inline-block;
+  top: 40px;
+  left: 77px;
+  width: 62px;
+  height: 77px;
+  background-image: url(../images/servis-eith.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.our-services__item--nine{
+  position: relative;
+}
+
+.our-services__item--nine::before{
+  content: "";
+  display: inline-block;
+  top: 33px;
+  left: 50px;
+  width: 86px;
+  height: 78px;
+  background-image: url(../images/servis-nine.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.our-services__item--ten{
+  position: relative;
+}
+
+.our-services__item--ten::before{
+  content: "";
+  display: inline-block;
+  top: 42px;
+  left: 53px;
+  width: 52px;
+  height: 77px;
+  background-image: url(../images/servis-ten.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.our-services__item--eleven{
+  position: relative;
+}
+
+.our-services__item--eleven::before{
+  content: "";
+  display: inline-block;
+  top: 42px;
+  left: 53px;
+  width: 78px;
+  height: 78px;
+  background-image: url(../images/servis-eleven.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.our-services__item--twelv{
+  position: relative;
+}
+
+.our-services__item--twelv::before{
+  content: "";
+  display: inline-block;
+  top: 42px;
+  left: 53px;
+  width: 77px;
+  height: 77px;
+  background-image: url(../images/servis-twelv.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.our-services__title{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color:var(--main-text-color);
+}
+
+.our-services__button{
+  border: none;
+  width: 38px;
+  height: 40px;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:all 0.3s ease;
+}
+
+.our-services__button:hover{
+  background-color: var(--white-bg-color);
+}
+
+.our-services__img{
+  width: 15px;
+  height: 25px;
+}
+
+.services__top{
+  position: relative;
+}
+
+.our-services__button--left{
+  position: absolute;
+  top: 85px;
+  left: -42px;
+}
+
+.our-services__button--right{
+  position: absolute;
+  top: 85px;
+  right: -42px;
+}
+
+
+.services__down{
+  width: 100%;
+  max-width: 1225px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 41px 35px;
+  background-color: var(--white-bg-color);
+}
+
+.inspection__picture{
+  margin-right: 65px;
+}
+
+.inspection__info{
+  width: 100%;
+  max-width: 492px;
+}
+
+.reception__title{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color:var(--main-text-color);
+  margin-bottom: 18px;
+}
+
+.reception__text{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+  margin-bottom: 9px;
+}
+
+.reception__text--margin{
+  margin-bottom: 34px;
+}
+
+.reception__link{
+  display: inline-block;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 15px 35px 15px 63px;
+  color: var(--white-bg-color);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.reception__link--one{
+  background-color: var(--ellow-bg-color);
+  margin-right: 21px;
+  position: relative;
+}
+
+.reception__link--one::before{
+  content: "";
+  width: 21px;
+  height: 21px;
+  top: 15px;
+  left: 30px;
+  background-image: url(../images/icons/money.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.reception__link--one:hover{
+  color: var(--ellow-hover-color);
+  background-color: var(--main-bg-color);
+}
+
+.reception__link--one:active{
+  opacity: 0.6;
+}
+
+.reception__link--two{
+  background-color: var(--main-bg-color);
+  position: relative;
+}
+
+.reception__link--two::before{
+  content: "";
+  width: 21px;
+  height: 21px;
+  top: 15px;
+  left: 30px;
+  background-image: url(../images/icons/document.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.reception__link--two:hover{
+  color:var(--main-text-color);
+  background-color:var(--ellow-hover-color);
+}
+
+.reception__link--two:active{
+  opacity: 0.6;
+}
+
+/* <!-- Hero events start --> */
+
+.events{
+  padding: 90px 0px 88px 0px;
+  background-image: url(../images/dog-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.events__info{
+  margin-left: 250px;
+  position: relative;
+}
+
+.events__info::after{
+  content: "";
+  width: 613px;
+  height: 481px;
+  top: -221px;
+  right: -46px;
+  background-image: url(../images/dog.png);
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.events__title{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: var(--white-bg-color);
+  margin-bottom: 32px;
+}
+
+.events__form{
+  display: flex;
+  align-items: center;
+}
+
+.events__input{
+  width: 355px;
+  padding: 18px 22px 12px 22px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-right: 21px;
+  border: 2px solid transparent;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--main-text-color);
+  transition: all 0.2s ease;
+}
+
+.events__input::placeholder{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #949494;
+}
+
+.events__input:focus{
+  border: 2px solid #FFBD54;
+}
+
+.events__input:not(:placeholder-shown):not(:focus):invalid {
+  border-color:#DC4D41;
+  color: #DC4D41;
+}
+
+.events__button{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color:var(--white-bg-color);
+  border: none;
+  padding: 15px 52px 15px 52px;
+  background-color: var(--main-bg-color);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.events__button:hover{
+  color: var(--main-text-color);
+  background-color: var(--ellow-hover-color);
+}
+
+/* Hero article start */
+
+.article{
+  padding: 150px 0px 260px 0px;
+}
+
+.article__title{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--main-text-color);
+  margin-bottom: 80px;
+}
+
+.article__list{
+  display: flex;
+  justify-content: center;
+}
+
+
+.article__item{
+  width: 307px;
+  background-color: var(--white-bg-color);
+  border: 1px solid #E4E4E2;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin-right: 24px;
+  overflow: hidden;
+}
+
+.article__item:last-child{
+  margin-right: 0;
+}
+
+.article__item:hover{
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.article__info{
+  padding: 22px 22px 35px 30px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start; */
+}
+
+.hospital__wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.hospital__inner{
+  width: 190px;
+}
+
+.wrap__list{
+  
+  display: none;
+  align-items: center;
+}
+
+.wrap__item{
+  margin-right: 7px;
+}
+
+.wrap__item:last-child{
+  margin-right: 0;
+}
+
+.wrap__time{
+  display: block;
+  margin-left: auto;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #949494;
+}
+
+.hospital__title{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 25px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.hospital__text{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+  margin-bottom: 37px;
+  /* white-space: nowrap; */
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+
+.hospital__box{
+  display: flex;
+  align-items: center;
+}
+
+.box__link{
+  display: flex;
+  align-items: center;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color:var(--main-text-color);
+  position: relative;
+  margin-top: auto;
+  transition: all 0.3s ease;
+}
+
+.box__link::before{
+  content: "";
+  width: 23px;
+  height: 21px;
+  background-image: url(../images/icons/pet.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-right: 5px;
+  
+}
+
+.box__link:hover{
+  color: var(--ellow-hover-color);
+}
+
+.box__link:active{
+  opacity: 0.7;
+}
+
+.article__img{
+  width: 305px;
+  height: 180px;
+}
+
+.article__item--active{
+  width: 640px;
+  display: flex;
+}
+
+.article__item--active > .article__info > .hospital__wrap{
+  margin-bottom: 32px;
+}
+
+.article__item--active > .article__picture > .article__img{
+  width: 305px;
+  height: 100%;
+}
+
+.article__item--active > .article__info > .hospital__wrap > .wrap__list{
+  display: flex;
+}
+
+
+
+
+.article__item--active > .article__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.article__item--active > .article__info {
+  padding-top: 43px;
+}
+
+
+.article__item--active > .article__info > .hospital__wrap{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article__item--active > .article__info > .hospital__inner{
+  margin-bottom: 15px;
+}
+
+.article__item--active > .article__info > .hospital__text{
+  margin-bottom: auto;
+}
+
+
+
+
+
+/* connaction */
+
+.connection{
+  margin-bottom: 240px;
+  background-image: url(../images/map-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.connection__inner{
+  width: 1520px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.connection__left{
+  width: 462px;
+  height: 652px;
+  margin-right: 166px;
+}
+
+.connection__map{
+  margin-top: 3px;
+  width: 462px;
+  height: 726px;
+}
+
+.connection__right{
+  width: 375px;
+  margin-top: 50px;
+  padding: 62px 0px 74px 0px;
+  position: relative;
+}
+
+.connection__right::after{
+  content: "";
+  width: 447px;
+  height: 447px;
+  top: 147px;
+  right: -509px;
+  background-image: url(../images/big-fish.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.form__title{
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 62px;
+  margin-bottom: 14px;
+  color: var(--white-bg-color);
+}
+
+.form__text{
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+  margin-bottom: 29px;
+}
+
+.form__input{
+  width: 375px;
+  padding: 16px 30px 13px 22px;
+  margin-bottom: 14px;
+  outline: none;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color:var(--main-text-color);
+}
+
+.form__input::placeholder{
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #949494;
+  border: 2px solid transparent;
+}
+
+.form__input:focus{
+  border-color:#FFBD54;
+}
+
+.form__input:not(:placeholder-shown):not(:focus):invalid {
+  border-color:#DC4D41;
+  color: #DC4D41;
+}
+
+.form__texterea{
+  width: 375px;
+  padding: 17px 22px 20px 22px;
+  outline: none;
+  resize: none;
+  margin-bottom: 30px;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--main-text-color);
+}
+
+.form__texterea:focus{
+  border-color:#FFBD54;
+}
+
+.form__texterea:not(:placeholder-shown):not(:focus):invalid {
+  border-color:#DC4D41;
+  color: #DC4D41;
+}
+
+
+.form__texterea::placeholder{
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #DBDBDB;
+}
+
+
+
+.form__button{
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--white-bg-color);
+  padding: 15px 50px;
+  background-color: #FFBD54;
+  border: none;
+  border-radius: 3px;
+}
+
+.form__button:hover{
+  opacity: 0.8; ;
+}
+
+.form__button:active{
+  opacity: 0.6;
+}
+
+
+/* Footer */
+
+
+.site-footer{
+  padding: 54px 0px 23px 0px;
+}
+
+.site-footer__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 28px;
+}
+
+.site-footer__img{
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.site-footer__img:hover{
+  opacity: 0.8;
+}
+
+.site-footer__img:active{
+  opacity: 0.6;
+}
+
+
+.over__item{
+  margin-bottom: 14px;
+}
+
+.over__link{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--main-text-color);
+  transition: all 0.3s ease;
+}
+
+.over__link:hover{
+  color: var(--ellow-hover-color);
+}
+
+.over__link:active{
+  color: #333333b3;
+}
+
+.data__list{
+  position: relative;
+}
+
+.data__list::before{
+  content: "";
+  width: 16px;
+  height: 16px;
+  top: 3px;
+  left: -25px;
+  background-image: url(../images/icons/calendar.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.data__item{
+margin-bottom: 3px;
+}
+
+.location__address{
+  width: 157px;
+  position: relative;
+  font-family: 'Futura PT';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+display: flex;
+align-items: center;
+color: var(--main-text-color);
+position: relative;
+}
+
+.location__address::before{
+  content: "";
+  width: 16px;
+  height: 16px;
+  top: 3px;
+  left: -25px;
+  background-image: url(../images/icons/house.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.tel__list{
+  position: relative;
+}
+
+.tel__list::before{
+  content: "";
+  width: 16px;
+  height: 16px;
+  top: 3px;
+  left: -25px;
+  background-image: url(../images/icons/phone.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.tel__item{
+  margin-bottom: 4px;
+}
+
+.tel__item:last-child{
+  margin-bottom: 0px;
+}
+
+.tel__link{
+  font-family: 'Futura PT';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+text-align: right;
+color: var(--main-text-color);
+transition: all 0.3s ease;
+}
+
+.tel__link:hover{
+  color: var(--ellow-hover-color);
+}
+
+.tel__link:active{
+  color: #333333b3;
+}
+
+.site-footer__and{
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Futura PT';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: right;
+color: #5C5C5C;
+}
+
+
+
