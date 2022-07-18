@@ -1471,6 +1471,7 @@ h1 , h2 , h3 , p {
 
 .site-footer{
   padding: 54px 0px 23px 0px;
+  background-color: #F3F3F3;
 }
 
 .site-footer__inner{
