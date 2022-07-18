@@ -349,6 +349,7 @@ h1 , h2 , h3 , p {
   display: flex;
   align-items: center;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .menu__item{
