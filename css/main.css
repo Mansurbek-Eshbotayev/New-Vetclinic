@@ -346,7 +346,7 @@ h1 , h2 , h3 , p {
 }
 
 .menu__list{
-  width: 680px;
+  width: 700px;
   display: flex;
   align-items: center;
   position: relative;
