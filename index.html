@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vet Clinic</title>
   <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
-  <!-- <link rel="stylesheet" href="./css/main.css"> -->
-  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
 </head>
 <body>
   
@@ -135,7 +135,7 @@
               
               <li class="menu__item">
                 
-                <a class="menu__link" href="#servis">
+                <a class="menu__link" href="./services.html">
                   Наши Услуги
                 </a>
                 
@@ -171,7 +171,7 @@
           
           <div class="down__right">
             
-            <a class="down__link" href="#">
+            <a class="down__link" >
               Задать вопрос
             </a>
             
@@ -252,7 +252,7 @@
     <!-- Hero blockquote finish -->
     
     <!-- Hero services start -->
-    <section class="services" id="servis">
+    <section class="services" >
       
       <div class="container">
         
@@ -484,7 +484,7 @@
             
             <input class="events__input" type="email" name="enter_your_email" aria-label="Entr Your Email address" placeholder="Укажите Ваш email адрес" required>
             
-            <button class="events__button">
+            <button class="events__button" type="submit">
               Подписаться
             </button>
             
@@ -815,7 +815,7 @@
             
             <li class="over__item">
               
-              <a class="over__link" href="#servis">
+              <a class="over__link" href="./services.html">
                 Наши Услуги
               </a>
               
@@ -938,5 +938,59 @@
   </footer>
   
   <!-- Site footer finish -->
+
+  <section class="modal-show ">
+    
+    <div class="modal-show__one modal">
+      
+      <div class="modal__inner">
+        
+        <div class="modal__links">
+          
+          <p class="modal__info">
+            Авторизация:
+          </p>
+          
+          <a class="modal__link modal__link--one" href="https://www.google.ru/"  target="blank">
+            Войти через Google
+          </a>
+          
+          <a class="modal__link modal__link--two" href="https://ru-ru.facebook.com/" target="blank">
+            Войти через Facebook
+          </a>
+          
+        </div>
+        
+        <div class="modal__right information">
+          
+          <h3 class="information__title">
+            Задать вопрос
+          </h3>
+          
+          <form class="information__form" action="https://echo.htmlacademy.ru/courses" method="post" autocomplete="off">
+            
+            <input class="information__input" type="text" name="your_name" minlength="2" aria-label="Entr your name" placeholder="Ваше имя" required>
+            
+            <textarea class="information__text" name="your_message"  cols="20" rows="10" minlength="30" aria-label="Entr your name" placeholder="Опишите Ваш вопрос."></textarea>
+            
+            <button class="information__send" type="submit">
+              Отправить 
+            </button>
+            
+          </form>
+          
+        </div>
+        
+      </div>
+      
+      <button class="modal__btn">
+      </button>
+      
+    </div>
+    
+  </section>
+
+
+  <script src="./js/main.js"></script>
 </body>
 </html>
