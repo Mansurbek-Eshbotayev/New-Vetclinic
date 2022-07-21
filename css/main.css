@@ -1773,7 +1773,7 @@ only screen and ( min-resolution: 1.3dppx ) {
   background-image: url(../images/big-cat.png);
   background-repeat: no-repeat;
   background-size: 570px auto;
-  background-position: calc(50% + 508px) calc(50% - 523px);
+  background-position: calc(50% + 508px) calc(50px);
 }
 
 
@@ -1851,7 +1851,7 @@ only screen and ( min-resolution: 1.3dppx ) {
 
 }
 
-.detail__item{
+.detaile__item{
   width: 752px;
   padding: 25px 41px 32px 63px;
   background-color: #FFFFFF;
@@ -1860,11 +1860,11 @@ only screen and ( min-resolution: 1.3dppx ) {
   margin-bottom: 18px;
 }
 
-.detail__item:last-child{
+.detaile__item:last-child{
   margin-bottom: 0;
 }
 
-.detail__item--desebl{
+.detaile__item--desebl{
   opacity: 0.6;
 }
 
