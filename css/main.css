@@ -446,16 +446,16 @@ h1 , h2 , h3 , p {
 }
 
 @media only screen and ( -webkit-min-device-pixel-ratio: 1.3 ),
-       only screen and (    min--moz-device-pixel-ratio: 1.3 ),
-       only screen and (      -o-min-device-pixel-ratio: 2.6/2 ), /* returns 1.3, see Dev.Opera */
-       only screen and (         min-device-pixel-ratio: 1.3 ),
-       only screen and ( min-resolution: 124.8dpi ),
-       only screen and ( min-resolution: 1.3dppx ) {
-
-        .hero {
-           background: url( "../images/hero-bg@2x.png" ) no-repeat top left / 870px 834px;
-       }
-
+only screen and (    min--moz-device-pixel-ratio: 1.3 ),
+only screen and (      -o-min-device-pixel-ratio: 2.6/2 ), /* returns 1.3, see Dev.Opera */
+only screen and (         min-device-pixel-ratio: 1.3 ),
+only screen and ( min-resolution: 124.8dpi ),
+only screen and ( min-resolution: 1.3dppx ) {
+  
+  .hero {
+    background: url( "../images/hero-bg@2x.png" ) no-repeat top left / 870px 834px;
+  }
+  
 }
 
 .hero__info{
@@ -1523,23 +1523,23 @@ h1 , h2 , h3 , p {
 
 .hight__title{
   font-family: 'Futura PT';
-font-style: normal;
-font-weight: 700;
-font-size: 70px;
-line-height: 64px;
-color: #333333;
-margin-bottom: 21px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 64px;
+  color: #333333;
+  margin-bottom: 21px;
 }
 
 .hight__text{
   font-family: 'Futura PT';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 20px;
-display: flex;
-align-items: center;
-color: #949494;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #949494;
 }
 
 .low__list{
@@ -1552,14 +1552,14 @@ color: #949494;
   width: 305px;
   padding: 157px 22px 45px 53px;
   background-color: #FFFFFF;
-border-radius: 5px 5px 0px 0px;
-background-image: url(../images/icons/peting.svg);
-background-repeat: no-repeat;
-background-size: 140px auto;
-background-position: calc(50% + 81px) calc(50% - 144px);
-position: relative;
-margin-bottom: 34px;
-transition: all 0.3s ease;
+  border-radius: 5px 5px 0px 0px;
+  background-image: url(../images/icons/peting.svg);
+  background-repeat: no-repeat;
+  background-size: 140px auto;
+  background-position: calc(50% + 81px) calc(50% - 144px);
+  position: relative;
+  margin-bottom: 34px;
+  transition: all 0.3s ease;
 }
 
 .low__item:hover{
@@ -1571,7 +1571,7 @@ transition: all 0.3s ease;
   width: 54px;
   height: 77px;
   bottom: 285px;
-    left: 55px;
+  left: 55px;
   background-image: url(../images/servis-one.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -1583,7 +1583,7 @@ transition: all 0.3s ease;
   width: 61px;
   height: 76px;
   bottom: 285px;
-    left: 55px;
+  left: 55px;
   background-image: url(../images/servis-two.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -1595,7 +1595,7 @@ transition: all 0.3s ease;
   width: 72px;
   height: 77px;
   bottom: 285px;
-    left: 55px;
+  left: 55px;
   background-image: url(../images/servis-thri.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -1607,7 +1607,7 @@ transition: all 0.3s ease;
   width: 76px;
   height: 76px;
   bottom: 285px;
-    left: 55px;
+  left: 55px;
   background-image: url(../images/servis-four.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -1619,7 +1619,7 @@ transition: all 0.3s ease;
   width: 78px;
   height: 78px;
   bottom: 285px;
-    left: 55px;
+  left: 55px;
   background-image: url(../images/servis-five.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -1631,7 +1631,7 @@ transition: all 0.3s ease;
   width: 76px;
   height: 76px;
   bottom: 285px;
-    left: 55px;
+  left: 55px;
   background-image: url(../images/servis-six.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -1643,7 +1643,7 @@ transition: all 0.3s ease;
   width: 77px;
   height: 77px;
   bottom: 285px;
-    left: 55px;
+  left: 55px;
   background-image: url(../images/servis-seven.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -1655,7 +1655,7 @@ transition: all 0.3s ease;
   width: 40px;
   height: 77px;
   bottom: 285px;
-    left: 55px;
+  left: 55px;
   background-image: url(../images/servis-eith.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -1667,7 +1667,7 @@ transition: all 0.3s ease;
   width: 86px;
   height: 78px;
   bottom: 285px;
-    left: 55px;
+  left: 55px;
   background-image: url(../images/servis-nine.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -1679,7 +1679,7 @@ transition: all 0.3s ease;
   width: 68px;
   height: 76px;
   bottom: 285px;
-    left: 55px;
+  left: 55px;
   background-image: url(../images/servis-ten.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -1691,7 +1691,7 @@ transition: all 0.3s ease;
   width: 78px;
   height: 78px;
   bottom: 285px;
-    left: 55px;
+  left: 55px;
   background-image: url(../images/servis-eleven.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -1703,7 +1703,7 @@ transition: all 0.3s ease;
   width: 77px;
   height: 77px;
   bottom: 285px;
-    left: 55px;
+  left: 55px;
   background-image: url(../images/servis-tvelv.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -1722,27 +1722,27 @@ transition: all 0.3s ease;
 
 .low__text{
   font-family: 'Futura PT';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 20px;
-color: #949494;
-margin-bottom: 26px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+  margin-bottom: 26px;
 }
 
 .low__link{
   display: inline-block;
   font-family: 'Futura PT';
-font-style: normal;
-font-weight: 450;
-font-size: 16px;
-line-height: 21px;
-text-align: center;
-padding: 15px 30px;
-background-color: #FFBD54;
-border-radius: 3px;
-color: #FFFFFF;
-transition: all 0.3s ease;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  padding: 15px 30px;
+  background-color: #FFBD54;
+  border-radius: 3px;
+  color: #FFFFFF;
+  transition: all 0.3s ease;
 }
 
 .low__link:hover{
@@ -1765,14 +1765,231 @@ transition: all 0.3s ease;
   opacity: 0.7;
 }
 
+
+/* FaQ */
+
+.site-faq{
+  padding: 118px 0px 270px 0px;
+  background-image: url(../images/big-cat.png);
+  background-repeat: no-repeat;
+  background-size: 570px auto;
+  background-position: calc(50% + 508px) calc(50% - 523px);
+}
+
+
+.site-faq__top{
+  width: 447px;
+  margin-left: 112px;
+  margin-bottom: 63px;
+  
+}
+
+.intro__title{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 64px;
+  color: #333333;
+  margin-bottom: 27px;
+}
+
+.intro__text{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+  margin-bottom: 35px;
+}
+
+.intro__link{
+  font-family: 'Futura PT';
+  display: inline-block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 15px 38px 15px 66px;
+  background-color: #78C0DE;
+  border-radius: 3px;
+  color: #FFFFFF;
+  position: relative;
+}
+
+.intro__link::before{
+  content: "";
+  width: 21px;
+  height: 21px;
+  top: 16px;
+  left: 39px;
+  background-image: url(../images/icons/document.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+
+/* F.A.Q down */
+
+.site-faq__down{
+  margin-left: 112px;
+  position: relative;
+}
+
+.site-faq__down::after{
+  content: "";
+  width: 655px;
+  height: 640px;
+  bottom: -187px;
+  right: -235px;
+  background-image: url(../images/big-bord.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+
+}
+
+.detail__item{
+  width: 752px;
+  padding: 25px 41px 32px 63px;
+  background-color: #FFFFFF;
+  border: 1px solid #F3F3F3;
+  border-radius: 5px;
+  margin-bottom: 18px;
+}
+
+.detail__item:last-child{
+  margin-bottom: 0;
+}
+
+.detail__item--desebl{
+  opacity: 0.6;
+}
+
+.open__top{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.open__top::before{
+  content: "";
+  width: 23px;
+  height: 20px;
+  background-image: url(../images/icons/pet-down.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-right: 6px;
+  margin-bottom: auto;
+}
+
+.open__top--blue::before{
+  content: "";
+  width: 23px;
+  height: 20px;
+  background-image: url(../images/icons/pet-blue.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-right: 6px;
+  margin-bottom: auto;
+}
+
+.open__info{
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.little__time{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: #333333;
+  margin-right: 28px;
+}
+
+.little__info{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #78C0DE;
+}
+
+.open__folder{
+  width: 585px;
+}
+
+.open__title{
+  list-style: none;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: #333333;
+  margin-bottom: 23px;
+  position: relative;
+}
+
+.low__img{
+  position: absolute;
+  top: 5px;
+  right: -60px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.open__folder[open] .low__img {
+  
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.open__folder[open] .low__img--clock {
+  
+  -webkit-transform: none;
+  transform: none;
+  -webkit-transform: none;
+  transform: none;
+}
+
+
+.open__text{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+  margin-bottom: 32px;
+}
+
+
+
 /* Modal */
 
 .modal-show{
   display: none;
-width: 100%;
-height: 100%;
-position: fixed;
-background-color: #f9f9f988;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #f9f9f988;
 }
 
 .modal-show__on{
@@ -1807,9 +2024,9 @@ background-color: #f9f9f988;
 }
 
 .modal__inner{
-display: flex;
-justify-content: space-between;
-position: relative;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
 .modal__links{
@@ -1818,24 +2035,24 @@ position: relative;
 
 .modal__info{
   font-family: 'Futura PT';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 30px;
-color: #333333;
-margin-bottom: 21px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+  margin-bottom: 21px;
 }
 
 .modal__link{
   display: inline-block;
   font-family: 'Futura PT';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 21px;
-padding: 14px 36px 15px 56px;
-background-color: #FFFFFf;
-color: #333333;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 14px 36px 15px 56px;
+  background-color: #FFFFFf;
+  color: #333333;
 }
 
 .modal__link--one{
@@ -1879,12 +2096,12 @@ color: #333333;
 
 .information__title{
   font-family: 'Futura PT';
-font-style: normal;
-font-weight: 700;
-font-size: 50px;
-line-height: 54px;
-color: #333333;
-margin-bottom: 25px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 54px;
+  color: #333333;
+  margin-bottom: 25px;
 }
 
 .information__input{
@@ -1898,13 +2115,13 @@ margin-bottom: 25px;
 
 .information__input::placeholder{
   font-family: 'Futura PT';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 21px;
-display: flex;
-align-items: center;
-color: #949494;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #949494;
 }
 
 .information__input:focus{
@@ -1929,13 +2146,13 @@ color: #949494;
 
 .information__text::placeholder{
   font-family: 'Futura PT';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 21px;
-display: flex;
-align-items: center;
-color: #949494;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #949494;
 }
 
 .information__text:not(:placeholder-shown):not(:focus):invalid {
@@ -1946,13 +2163,13 @@ color: #949494;
 .information__send{
   border: none;
   font-family: 'Futura PT';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 21px;
-padding: 14px 60px;
-background-color: #000000;
-color: #FFFFFF;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 14px 60px;
+  background-color: #000000;
+  color: #FFFFFF;
 }
 
 .modal__btn{
@@ -2040,21 +2257,21 @@ color: #FFFFFF;
 }
 
 .data__item{
-margin-bottom: 3px;
+  margin-bottom: 3px;
 }
 
 .location__address{
   width: 157px;
   position: relative;
   font-family: 'Futura PT';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 21px;
-display: flex;
-align-items: center;
-color: var(--main-text-color);
-position: relative;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: var(--main-text-color);
+  position: relative;
 }
 
 .location__address::before{
@@ -2095,13 +2312,13 @@ position: relative;
 
 .tel__link{
   font-family: 'Futura PT';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 18px;
-text-align: right;
-color: var(--main-text-color);
-transition: all 0.3s ease;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  color: var(--main-text-color);
+  transition: all 0.3s ease;
 }
 
 .tel__link:hover{
@@ -2116,14 +2333,14 @@ transition: all 0.3s ease;
   display: flex;
   justify-content: flex-end;
   font-family: 'Futura PT';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 18px;
-display: flex;
-align-items: center;
-text-align: right;
-color: #5C5C5C;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #5C5C5C;
 }
 
 
