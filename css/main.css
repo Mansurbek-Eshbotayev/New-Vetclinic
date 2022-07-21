@@ -1848,7 +1848,7 @@ only screen and ( min-resolution: 1.3dppx ) {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-
+  
 }
 
 .detaile__item{
@@ -1979,6 +1979,218 @@ only screen and ( min-resolution: 1.3dppx ) {
   color: #949494;
   margin-bottom: 32px;
 }
+
+/* contact page */
+
+.contact{
+  padding: 118px 0px 135px 0px;
+  background-image: url(../images/contact-bg.png);
+  background-repeat: no-repeat;
+  background-size: 673px 568px;
+  background-position: calc(50% + 590px) calc(33px);
+}
+
+.contact__info{
+  width: 447px;
+  margin-bottom: 117px;
+  margin-left: 112px;
+}
+
+.contact__title{
+  margin-bottom: 27px;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 64px;
+  color: #333333;
+}
+
+.contact__text{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+}
+
+.contact__down{
+  margin-left: 112px;
+}
+
+.house__list{
+  display: flex;
+  align-items: flex-start;
+}
+
+.house__item{
+  margin-right: 118px;
+}
+
+.house__item--one{
+  position: relative;
+}
+
+.house__item--one::before{
+  content: "";
+  width: 73px;
+  height: 73px;
+  background-image: url(../images/icons/locationn.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.house__item--two{
+  position: relative;
+}
+
+.house__item--two::before{
+  content: "";
+  width: 76px;
+  height: 72px;
+  background-image: url(../images/icons/calendarr.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.house__item--thri{
+  position: relative;
+}
+
+.house__item--thri::before{
+  content: "";
+  width: 41px;
+  height: 72px;
+  background-image: url(../images/icons/phonee.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.house__item:last-child{
+  margin-right: 0;
+}
+
+.house__address{
+  width: 153px;
+}
+
+.house__link{
+  display: inline-block;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #333333;
+}
+
+.number__text{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  margin-bottom: 12px;
+}
+
+.number__text:last-child{
+  margin-bottom: 0;
+}
+
+.number__link{
+  display:block;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: left;
+  color: #333333;
+  margin-bottom: 9px;
+  transition: all 0.3s ease;
+}
+
+.number__link:last-child{
+  margin-bottom: 0;
+}
+
+.number__link:hover{
+  color: #FFBD54;
+}
+
+.number__link:active{
+  color: #333333;
+  opacity: 0.6;
+}
+
+/* Section map */
+
+.map{
+  padding: 245px 0px 205px 0px;
+  background-image: url(../images/foot-dogs.png);
+  background-repeat: no-repeat;
+  background-size: 935px 330px;
+  background-position: calc(50% + 240px) calc(50% - 363px);
+}
+
+.map__title{
+  font-family: 'Futura PT';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 62px;
+text-align: center;
+margin-bottom: 60px;
+color: #333333;
+position: relative;
+}
+
+.map__title::before{
+  content: "";
+  width: 112px;
+  height: 112px;
+  top: -119px;
+  left: calc(50% + 30px);
+  z-index: 3;
+  background-image: url(../images/icons/wind.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.map__inner{
+  width: 100%;
+  max-width: 1520px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  position: relative;
+}
+
+.map__inner::before{
+  content: "";
+  width: 433px;
+  height: 342px;
+  top: -290px;
+    left: 60px;
+  background-image: url(../images/on-map.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+ position: absolute;
+}
+
+
+
 
 
 
