@@ -2345,6 +2345,7 @@ background-color: #333333;
 border-radius: 3px;
 color: #FFFFFF;
 position: relative;
+transition: all 0.3s ease;
 }
 
 .article__box{
@@ -2364,7 +2365,14 @@ background-size: contain;
 position: absolute;
 }
 
+.article__link:hover{
+  color: #333333;
+  background-color:  #FFBD54;
+}
 
+.article__link:active{
+  opacity: 0.6;
+}
 
 /* Modal */
 
