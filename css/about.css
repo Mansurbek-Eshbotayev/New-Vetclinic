@@ -1,0 +1,221 @@
+/* about hero section start */
+
+.about-hero {
+    padding-top: 117px;
+    padding-bottom: 309px;
+    background-image: url("../images/about-hero-bgi.png"), url("../images/about-bg-pets.svg");
+    background-size: 448px 545px, 669px 236px;
+    background-repeat: no-repeat;
+    background-position: calc(50% + 385px) 7px, calc(50% - 305px) 291px;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+ .about-hero{
+    background-image: url("../images/about-hero-bgi@2x.png"), url("../images/about-bg-pets.svg");
+ } 
+}
+
+.about-hero__info {
+    width: 411px;
+    margin-left: 110px;
+}
+
+.about-hero__title {
+    margin: 0;
+    margin-bottom: 22px;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 64px;
+    color: #333333;
+}
+
+.about-hero__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+}
+
+/* ABOUT INFO SECTION START */
+
+.about-info {
+    margin-bottom: 23px;
+}
+
+.about-info__inner {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.about-info__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+    background-color: #fff;
+    background-image: url("../images/about-info-bgi.svg");
+    background-repeat: no-repeat;
+    background-size: 754px 435px;
+    background-position: top 20px right 15px;
+}
+
+.about-info__text-box {
+    width: 565px;
+    margin-left: 112px;
+}
+
+.about-info__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #949494;
+}
+
+.about-info__text-span {
+    display: inline-block;
+    color: #FFBD54;
+}
+
+.about-info__bottom {
+    display: flex;
+    align-items: center;
+}
+
+
+.about-info__text-box--bottom {
+    width: 511px;
+    margin-left: 177px;
+}
+
+.about-info__bottom-text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+}
+
+.about-info__bottom-text--first {
+    margin-bottom: 19px;
+}
+
+.about-info__text-span--bottom {
+    color: #78C0DE;
+}
+
+/* CUT SECTION START */
+
+.cut {
+    padding-bottom: 145px;
+}
+
+.cut__inner {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.cut__inner-box {
+    position: relative;
+    z-index: 1;
+    display: flex;
+}
+
+.cut__info {
+    position: relative;
+    z-index: 1;
+    width: 416px;
+    margin: 92px 30px 0 177px;
+}
+
+.cut__info::after{
+    position: absolute;
+    bottom: 0;
+    left: 160px;
+    display: block;
+    width: 37px;
+    height: 42px;
+    content: "";
+    background-image: url("../images/about-numbers.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cut__title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 48px;
+    color: #333333;
+}
+
+.cut__title-span{
+    display: inline-block;
+    color: #FFBD54;
+}
+
+.cut__text-box {
+    width: 343px;
+}
+
+.cut__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+}
+
+.cut__btn-box{
+    display: flex;
+}
+
+.cut__btn{
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    background-image: url("../images/about-arrow.svg");
+    background-size: 9px 17px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 0.3s ease;
+}
+
+.cut__btn:hover{
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.cut__btn:active{
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.cut__btn:nth-child(2){
+    transform: rotate(180deg);
+    left: 57px;
+}
+
+.cut__img--second{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.cut__img--last{
+    position: absolute;
+    top: 0;
+    right: -144px;
+    z-index: 2;
+}
